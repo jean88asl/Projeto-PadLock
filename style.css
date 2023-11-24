@@ -1,0 +1,131 @@
+/*reset básico de CSS*/
+:root {
+    --black: #111;
+    --white: #FFF;
+    --bg-color: #2F2E41;
+    --color-h1: #00BFA6;
+    --hover: #a79696;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    /* transition: .2s linear; */
+}
+
+html {
+    /*Ajustando o tamanho dos textos para rem*/
+    font-size: 62.5%;
+    /*scroll mais suave*/
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-decoration: none;
+    height: 100vh;
+
+    background: var(--bg-color);
+}
+
+#app a:hover {
+    color: var(--hover);
+}
+
+#app {
+    font-family: 'Open Sans', sans-serif;
+    /* para ficar com layout igual do figma, alterei o width para porcentagem, pois o h1 estava ficando em mais de uma linha em tela cheia */
+    width: 80%;
+    
+    margin: 0 auto;
+    padding-top: 7rem;
+
+    color: var(--white);
+}
+
+#app nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 10rem;
+}
+
+#app nav ul {
+    display: flex;
+    align-items: center;
+    gap: 6.5rem;
+}
+
+#app nav ul li {
+    list-style: none;
+    font-family: 'JetBrains Mono', monospace;
+
+}
+
+#app nav ul li a {
+    color: var(--white);
+    font-weight: 500;
+    /* font-size: 14px; */
+}
+
+#app main {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+
+    margin-bottom: 15.7rem;
+}
+
+#app main img {
+    height: 28.3rem;
+    width: 40rem;
+}
+
+#app main section {
+    text-align: center;
+}
+
+#app main section h1 {
+    font-family: JetBrains Mono;
+    font-size: 36px;
+    font-style: normal;
+}
+
+#app main section span {
+    color: var(--color-h1);
+    font-weight: bold;
+}
+
+#app main section p {
+    color: #C2C2C2;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+}
+
+#app footer {
+    text-align: center;
+    font-family: JetBrains Mono;
+    font-size: 1.4rem;
+}
+
+#app footer .line {
+    width: 56rem;
+    margin: auto;
+    border: 1px solid var(--color-h1);
+    margin-bottom: 2.7rem;
+
+}
+
+#app footer a {
+    color: var(--white)
+}
+
+#app #padlock {
+    position: relative;
+    bottom: 5rem;
+}
