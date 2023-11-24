@@ -9,7 +9,7 @@ Página fictícia de uma empresa de segurança da informação. Possui uma área
 Layout:
 
 <p align="center">
-  <img alt="projeto DevLinks" src=".github/site.png" width="100%">
+  <img alt="projeto DevLinks" src=".github/site1.png" width="100%">
 </p>
 
 <hr>
